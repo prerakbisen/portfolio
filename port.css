@@ -12,7 +12,9 @@ body {
 .intro-text {
     width: 50%;
     height: 88vh;
+    /* flex: 1; */
     background-color: #d8d8d8;
+    /* padding: 20px; */
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -61,10 +63,12 @@ body {
 nav {
     margin-top: 20px;
     padding: 9px;
+    /* margin-left: 50px; */
     color: #757575;
     display: flex;
     width: 90%;
     height: 35px;
+
 }
 
 nav a{
@@ -93,27 +97,39 @@ nav{
 .resume {
     transform: scale(1.5);
     transition-duration: 1.3s;
+    /* box-shadow: 5px 5px 10px rgb(255, 255, 0); */
     border-radius: 50%;
     transition-timing-function: ease-in-out;
+    
+    
 }
+
+
 
 .intro-image {
     width: 50%;
     height: 88vh;
+    /* flex: 1; */
     background-color: #000;
     display: grid;
     align-items: center;
     justify-content: center;
 }
+.intro-image resum{
+    margin-bottom: 0;
+}
 
 .imag {
+    /* max-width: 100%; */
     width: 95%;
     height: 100%;
     margin-left: 5%;
+    /* margin-top:995px; */
 }
 
 .imag img {
     margin-top: 3%;
+    /* margin-right: 50px; */
     width: 80%;
     height: auto;
     overflow-clip-margin: content-box;
@@ -246,10 +262,12 @@ nav{
 .btn {
     width: 110px;
     height: 30px;
+    /* background-color: #0ef; */
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 31px 50px 0px 270px;
+    /* transition: .35s; */
 }
 
 
@@ -270,6 +288,7 @@ nav{
     width: 700px;
     height: 250px;
     border: 3px solid black;
+    /* padding: 10px; */
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -304,6 +323,7 @@ nav{
     background-color: rgb(210, 208, 208);
     width: 100%;
     margin-left: 0px;
+    /* background-color: black; */
 }
 
 #cont h1 {
@@ -329,7 +349,7 @@ nav{
     text-decoration: none;
     color: #000;
 }
-/* -----------------------------------footer--- */
+/* --------------footer--- */
 .footer {
     background-color: #000000;
     color: #fff;
@@ -370,8 +390,10 @@ nav{
     width: 24px;
     height: 24px;
 }
- /* Default styles for small screens */
+
+
 @media screen and (max-width: 600px) {
+    /* Intro section */
     .intro {
         flex-direction: column;
         height: auto;
@@ -410,7 +432,7 @@ nav{
         height: auto;
     }
 
-    /* About  */
+    /* About section */
     .about {
         padding: 30px;
         font-size: 1.1em;
@@ -422,7 +444,7 @@ nav{
         margin-left: 50px;
     }
 
-    /* Skills  */
+    /* Skills section */
     .skills {
         flex-direction: column;
         align-items: center;
@@ -441,7 +463,7 @@ nav{
         margin-left: 65px;
     }
 
-    /* Projects  */
+    /* Projects section */
     .container2 {
         width: 90vw;
     }
@@ -467,7 +489,7 @@ nav{
         height: auto;
     }
 
-    /* Contact  */
+    /* Contact section */
     #cont h1 {
         margin-left: 66px;
     }
@@ -496,9 +518,8 @@ nav{
     }
 }
 
-/* Medium screens */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-    /* Intro  */
+    /* Intro section */
     .intro {
         flex-direction: column;
     }
@@ -535,7 +556,7 @@ nav{
         height: auto;
     }
 
-    /* About  */
+    /* About section */
     .about {
         padding: 40px;
         font-size: 1.2em;
@@ -545,7 +566,7 @@ nav{
         margin-left: 0;
     }
 
-    /* Skills  */
+    /* Skills section */
     .skills {
         flex-wrap: wrap;
         justify-content: center;
@@ -563,7 +584,7 @@ nav{
         margin-left: 32%;
     }
 
-    /* Projects  */
+    /* Projects section */
     .container2 {
         width: 80vw;
     }
@@ -588,7 +609,7 @@ nav{
         height: 200px;
     }
 
-    /* Contact  */
+    /* Contact section */
     #cont h1 {
         margin-left: 32%;
     }
@@ -617,9 +638,8 @@ nav{
     }
 }
 
-/* Large screens  */
+
 @media screen and (min-width: 1025px) {
-   
     .intro {
         height: 80vh;
     }
@@ -657,7 +677,7 @@ nav{
         height: auto;
     }
 
-    /* About  */
+    /* About section */
     .about {
         padding: 50px;
         font-size: 1.5em;
@@ -667,7 +687,7 @@ nav{
         margin-left: 43%;
     }
 
-    /* Skills  */
+    /* Skills section */
     .skills {
         justify-content: center;
     }
@@ -680,7 +700,7 @@ nav{
         width: 80vw;
     }
 
-    /* Projects  */
+    /* Projects section */
     .container2 {
         width: 80vw;
     }
@@ -703,7 +723,7 @@ nav{
         height: 250px;
     }
 
-    /* Contact  */
+    /* Contact section */
     #cont h1 {
         margin-left: 43%;
     }
