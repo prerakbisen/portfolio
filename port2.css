@@ -1,0 +1,390 @@
+#tpage{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", "sans-serif";
+    box-sizing: border-box;
+}
+
+#timepage {
+    /* display: none; */
+    /* background: #727fa2; */
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+     width: 100vw;
+  height: 100vh;
+   overflow: auto;
+   
+}
+.hidden {
+  display: none;
+}
+
+/* #page{
+    width: 100vh;
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+    height: 100%;
+    background: rgb(94, 44, 44);
+} */
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    width: 60%;
+    margin: 100px auto;
+    margin-top: -3px;
+    /* background-color: red; */
+
+}
+
+.close-btn {
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    margin-top: 83px;
+    margin-right: 11%;
+    background: none;
+    font-size: 30px;
+}
+
+.head {
+    background-color: rgb(197, 195, 195);
+    /* left: 50%; */
+    /* height: 10px; */
+    /* width: 20px; */
+    text-align: center;
+    font-size: 31px;
+    margin-top: 90px;
+    z-index: 11;
+    margin-bottom: 0px;
+    color: rgb(0, 0, 0);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.event {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    /* margin-top: 50px; */
+    background: rgba(0, 0, 0, 0.5);
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+    top: 1px;
+    border-radius: 3px;
+}
+
+@keyframes movedown {
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.event:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.event:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.event:nth-child(3) {
+    animation-delay: 2s;
+}
+
+.event:nth-child(4) {
+    animation-delay: 3s;
+}
+
+.event:nth-child(5) {
+    animation-delay: 4s;
+}
+
+.event:nth-child(6) {
+    animation-delay: 5s;
+}
+
+.text-box {
+    padding: 20px 30px;
+    background-color: rgb(175, 174, 174);
+    position: relative;
+    border-radius: 6px;
+   text-align: center;
+    font-size: larger;
+    /* top: -10px; */
+    margin-top: 0px;
+}
+
+.leftc {
+    left: -101px;
+}
+
+.rightc {
+    left: 50.2%;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 100%;
+    background: rgb(216, 216, 216);
+    border-radius: 3px;
+    /* border: 1px solid black; */
+    top: 0px;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 15;
+    animation: moveline 6s linear forwards;
+}
+
+@keyframes moveline {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+
+.gol {
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    background: rgb(216, 216, 216);
+    border-radius: 50%;
+    top: 32px;
+    z-index: 20;
+    right: -18px;
+}
+.gol img{
+     position: absolute;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    /* right: -18px; */
+}
+
+.rightc .gol {
+    left: -15px;
+}
+
+.text-box h2 {
+    font-weight: 900px;
+    margin-top: 11px;
+}
+
+.text-box small {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: large;
+}
+
+.text-box img{
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.leftc-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid rgb(175, 174, 174);
+    right: -14px;
+}
+
+.rightc-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid rgb(175, 174, 174);
+    left: -14px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .head{
+        width: 80vw;
+        margin-left: 33px;
+        margin-right: 5px;
+        left: 11px;
+    }
+
+    .timeline {
+        /* margin: 50px auto; */
+        margin-top: 0;
+        width: 60%;
+        left: 11px;
+        margin-left: 9px;
+    }
+
+    .timeline::after {
+        left: 31px;
+        top: -11px;
+    }
+
+    .event {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+        margin-bottom: 10px;
+    }
+
+    .text-box {
+        font-size: 13px;
+        width: 80%;
+    }
+    .text-box img{
+        height: auto;
+        width: 90%;
+    }
+
+    .text-box small {
+        margin-bottom: 10px;
+    }
+
+    .rightc {
+        left: 0;
+    }
+
+    .leftc {
+        left: 0;
+    }
+
+    .leftc .gol {
+        left: 17.5px;
+    }
+
+    .rightc .gol {
+        left: 17.5px;
+    }
+
+    .leftc-arrow {
+        border-left: 0;
+        border-right: 15px solid rgb(216, 216, 216);
+        /* Moving arrow to right */
+        left: -14px;
+    }
+
+    .rightc-arrow {
+        left: -14px;
+    }
+
+    .close-btn {
+        margin-top: 75px;
+        right: 10px;
+        font-size: 40px;
+        margin-right: 12%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .text-box img{
+        height: auto;
+        width: 90%;
+    }
+}
+
+/* ---side nav---- */
+.hidden-nav {
+  position: fixed;
+  left: -250px; /* Initially hidden */
+  top: 0;
+  width: 68px;
+  height: 40vh;
+  background: rgb(139, 138, 138);
+  color: white;
+  transition: left 0.5s ease;
+  padding-top:25px; 
+  margin-top: 13%;
+  margin-bottom: 15%;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+
+  
+}
+
+.show-nav {
+  left: 0; /* When scrolling, nav appears */
+}
+
+.content {
+  padding: 20px;
+}
+
+.sidenav-icons{
+    width: 100%;
+    height: 50%;
+    /* background-color: aqua; */
+    text-align: center;
+    margin-right: 21px;
+    margin-left: 21px;
+    cursor: pointer;
+}
+.icn{
+    width: 210px;
+    height: 40px;
+    /* margin-left: 40px; */
+    /* margin-right: 10%; */
+    margin-top: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.icn img{
+    width: 23px;
+    height: 23px;
+    margin-right: 20px;
+}
+.sidenav-icons a {
+    text-decoration: none;
+    color: black;
+}
+
+
+@media (max-width: 1024px) and (max-height: 1366px) {
+    .hidden-nav{
+        display: none;
+    }
+}
+
+.navext{
+    background-color: rgb(0, 0, 0);
+    height: 90vh;
+    width: 15%;
+    box-shadow: 90px 0px 10000px 100px #000000;
+    z-index: 3;
+    color: white;
+}
+.nicn a{
+    text-decoration: none;
+    color: #717171;
+}
