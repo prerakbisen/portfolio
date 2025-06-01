@@ -6,43 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Prerak Bisen</title>
     <link rel="stylesheet" href="port.css">
-    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="port2.css">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
 </head>
 
 <body>
     <div id="apage">
-       
+
         <main>
             <section class="intro">
                 <div class="intro-text">
                     <h1>Hi, I am<br>Prerak Bisen </h1>
                     <p>Computer Science and Engineering Student </p>
                     <div class="icons">
-                        <div class="git"><a href="https://github.com/prerakbisen"><img src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000" alt="github"></a>
+                        <div class="git"><a href="https://github.com/prerakbisen"><img
+                                    src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000"
+                                    alt="github"></a>
                         </div>
-                        <div class="link"><a href="https://in.linkedin.com/in/prerakbisen"><img src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt="LinkedIn"></a>
+                        <div class="link"><a href="https://in.linkedin.com/in/prerakbisen"><img
+                                    src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000"
+                                    alt="LinkedIn"></a>
                         </div>
-                        <div class="resum" id="res">
-                            <a href="#"  ><img  src="https://img.icons8.com/?size=100&id=CgELV9WHcecG&format=png&color=000000" alt="Resume"></a>
+                        <div class="resume-icon" id="res">
+                            <a href="#"><img
+                                    src="https://img.icons8.com/?size=100&id=CgELV9WHcecG&format=png&color=000000"
+                                    alt="Resume"></a>
                         </div>
-                        <!-- <a href="#"><img src="email.png" alt="Email"></a> -->
-                      </div>
+
+                    </div>
                 </div>
                 <div class="intro-image">
                     <nav>
-                        <a href="index.html"> <span class="sp">Home</span></a>
-                    <a href="#skl"> <span class="sp" >Skills</span></a>
-                    <a href="#proj"> <span class="sp">Projects</span></a>
-                    <a href="#cont"> <span class="sp">Contact</span></a>
-                    <div class="sp"  id="resume">Resume</div>
-                   
+                        <a href="index.html" class="scrollbtn"> <span class="sp">Home</span></a>
+                        <a href="#skl" class="scrollbtn"> <span class="sp">Skills</span></a>
+                        <a href="#proj" class="scrollbtn"> <span class="sp">Projects</span></a>
+                        <a href="#cont" class="scrollbtn"> <span class="sp">Contact</span></a>
+                        <div class="sp resum" id="resume" >Resume</div>
+
                     </nav>
                     <div class="imag">
-                        <img src="img2.jpg" alt="pb">
+                        <img src="images/img2.jpg" alt="pb">
                     </div>
 
                 </div>
             </section>
+            <!-- side nav -->
+            <div id="sidenav" class="hidden-nav">
+                <div class="sidenav-icons">
+                    <div class="icn" id="hi"><a href="#apage" class="scrollbtn"><img
+                                src="https://img.icons8.com/?size=100&id=v2LNL7ofGkrB&format=png&color=2b2b2b"
+                                alt="home"></a></div>
+                    <div class="icn" id="ai"><a href="#abt" class="scrollbtn"><img
+                                src="https://img.icons8.com/?size=100&id=85832&format=png&color=000000"
+                                alt="about"></a></div>
+                    <div class="icn" id="si"> <a href="#skl" class="scrollbtn"><img
+                                src="https://img.icons8.com/?size=100&id=53377&format=png&color=2b2b2b"
+                                alt="skills"></a></div>
+                    <div class="icn" id="ti"><a href="#proj" class="scrollbtn"><img
+                                src="https://img.icons8.com/?size=100&id=102879&format=png&color=2b2b2b"
+                                alt="projects"></a></div>
+                    <div class="icn" id="mi"> <a href="#cont" class="scrollbtn"><img
+                                src="https://img.icons8.com/?size=100&id=mAyvyvtM1xoZ&format=png&color=2b2b2b"
+                                alt="contact"></a></div>
+                    <div class="icn resum"  id="ri"> <a href="#apage" ><img
+                                src="https://img.icons8.com/?size=100&id=CgELV9WHcecG&format=png&color=2b2b2b"
+                                alt="resume"></a></div>
+                </div>
+            </div>
+
             <section class="about" id="abt">
                 <h1>ABOUT</h1>
                 <p>Hi there! I'm Prerak Bisen, a dedicated Computer Science and Engineering student with a strong
@@ -52,8 +83,80 @@
                     I've been diving into various fields such as software development , Data Structure, Web Development,
                     and cybersecurity. Every project and class has boosted my skills and encouraged me to think in new
                     and creative ways.
+
                 </p>
+                <span id="moreabt" class="sp">More about me</span>
             </section>
+            <!-- timeline -->
+            <div id="timepage" class="hidden">
+                <div id="tpage">
+                    <div class="head"><b>TIMELINE</b>
+                        <div class="close-btn" id="closeBtn">&times;</div>
+                    </div>
+                    <div class="timeline">
+                        <div class="event leftc">
+                            <div class="gol">
+                                <!-- <img src="kvlogo.jpg" alt=""> -->
+                            </div>
+                            <div class=" text-box">
+                                <h2>SCHOOL</h2>
+                                <small>Kendriya Vidyalaya Balaghat</small>
+                                <img src="images/kvbgt.jpg" alt="kvbgt">
+                                <p>I completed my schooling at <b>Kendriya Vidyalaya Balaghat</b>, where I built a
+                                    strong academic foundation and developed essential skills.</p>
+                                <span class="leftc-arrow"></span>
+                            </div>
+                        </div>
+                        <div class="event rightc">
+                            <div class="gol"></div>
+                            <div class=" text-box c">
+                                <!-- <h2></h2> -->
+                                <small>2020</small>
+                                <p><b>Passed Secondary School Examination</b>(10<sup>th</sup>)</p>
+                                <p>Board - CBSE</p>
+                                <p>Percentage - 85%</p>
+                                <span class="rightc-arrow"></span>
+                            </div>
+                        </div>
+                        <div class="event leftc">
+                            <div class="gol"></div>
+                            <div class=" text-box">
+                                <!-- <h2></h2> -->
+                                <small>2022</small>
+                                <p><b>Passed Senior School Certificate Examination</b>(12<sup>th</sup>)</p>
+                                <p>Board - CBSE</p>
+                                <p>Percentage - 86%</p>
+                                <span class="leftc-arrow"></span>
+                            </div>
+                        </div>
+                        <div class="event rightc">
+                            <div class="gol"></div>
+                            <div class=" text-box">
+                                <h2>GRADUATION</h2>
+                                <small>Lakshmi Narain College of Technology, Bhopal</small>
+                                <img src="images/lnct.jpg" alt="lnct">
+                                <p>I am currently pursuing my Bachelor's degree at <b>Lakshmi Narain College of
+                                        Technology, Bhopal</b>, where I am developing my skills and knowledge in
+                                    <b>Computer Science and Engineering</b></p>
+                                <span class="rightc-arrow"></span>
+                            </div>
+                        </div>
+                        <div class="event leftc">
+                            <div class="gol"></div>
+                            <div class=" text-box">
+                                <!-- <h2></h2> -->
+                                <small>2023 - Present</small>
+                                <!-- <p><b>Lakshmi Narain College of Technology, Bhopal</b></p> -->
+                                <p><b>Pursuing B Tech in Computer Science & Engineering</b></p>
+                                <p>Current CGPA - 8.33</p>
+                                <p>Passing year - 2027</p>
+                                <span class="leftc-arrow"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </main>
         <middle>
             <div id="skl">
@@ -62,31 +165,46 @@
                     <div class="section">
                         <h2>Using Now</h2>
                         <div class="skills">
-                            <div class="skill"> <img src="https://img.icons8.com/?size=100&id=Vzxgh92LHIwO&format=png&color=000000" alt="HTML">
+                            <div class="skill"> <img
+                                    src="https://img.icons8.com/?size=100&id=Vzxgh92LHIwO&format=png&color=000000"
+                                    alt="HTML">
                                 <p>HTML</p>
                             </div>
-                            <div class="skill"> <img src="https://img.icons8.com/?size=100&id=112049&format=png&color=000000" alt="CSS">
+                            <div class="skill"> <img
+                                    src="https://img.icons8.com/?size=100&id=112049&format=png&color=000000" alt="CSS">
                                 <p>CSS</p>
                             </div>
-                            <div class="skill"> <img src="https://img.icons8.com/?size=100&id=8httoRHg3Sbt&format=png&color=000000" alt="MYSQL">
-                                <p>MySQL</p>
-                            </div>
-                            <div class="skill"> <img src="https://img.icons8.com/?size=100&id=112700&format=png&color=000000" alt="JavaScript">
+                            <div class="skill"> <img
+                                    src="https://img.icons8.com/?size=100&id=112700&format=png&color=000000"
+                                    alt="JavaScript">
                                 <p>JavaScript</p>
                             </div>
-                            <div class="skill"> <img src="https://img.icons8.com/?size=100&id=35989&format=png&color=000000" alt="React">
+                            <div class="skill"> <img
+                                    src="https://img.icons8.com/?size=100&id=8httoRHg3Sbt&format=png&color=000000"
+                                    alt="MYSQL">
+                                <p>MySQL</p>
+                            </div>
+                            <div class="skill"> <img
+                                    src="https://img.icons8.com/?size=100&id=35989&format=png&color=000000" alt="React">
                                 <p>React</p>
                             </div>
-                            <div class="skill"> <img src="https://img.icons8.com/?size=100&id=8063bFl8pZSf&format=png&color=000000" alt="Bootstrap">
+                            <div class="skill"> <img
+                                    src="https://img.icons8.com/?size=100&id=8063bFl8pZSf&format=png&color=000000"
+                                    alt="Bootstrap">
                                 <p>Bootstrap</p>
                             </div>
-                            <div class="skill"> <img src="https://img.icons8.com/?size=100&id=32891&format=png&color=000000" alt="Git">
+                            <div class="skill"> <img
+                                    src="https://img.icons8.com/?size=100&id=32891&format=png&color=000000" alt="Git">
                                 <p>Git</p>
                             </div>
-                            <div class="skill"> <img src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000" alt="Github">
+                            <div class="skill"> <img
+                                    src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000"
+                                    alt="Github">
                                 <p>Github</p>
                             </div>
-                            <div class="skill"> <img src="https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000" alt="mongobd">
+                            <div class="skill"> <img
+                                    src="https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000"
+                                    alt="mongobd">
                                 <p>MongoDB</p>
                             </div>
                         </div>
@@ -94,37 +212,52 @@
                     <div class="section">
                         <h2>Learning</h2>
                         <div class="skills">
-                            <div class="skill"> <img src="https://img.icons8.com/?size=100&id=2572&format=png&color=000000" alt="java">
+                            <div class="skill"> <img
+                                    src="https://img.icons8.com/?size=100&id=2572&format=png&color=000000" alt="java">
                                 <p>Java</p>
                             </div>
-                            <div class="skill"> <img src="https://img.icons8.com/?size=100&id=12592&format=png&color=000000" alt="python">
+                            <div class="skill"> <img
+                                    src="https://img.icons8.com/?size=100&id=s35S45z4txOJ&format=png&color=000000" alt="dsa">
+                                <p>DSA</p>
+                            </div>
+                            <div class="skill"> <img
+                                    src="https://img.icons8.com/?size=100&id=90519&format=png&color=000000" alt="spring">
+                                <p>Spring boot</p>
+                            </div>
+                            <div class="skill"> <img
+                                    src="https://img.icons8.com/?size=100&id=12592&format=png&color=000000"
+                                    alt="python">
                                 <p>Pyton</p>
                             </div>
-                            <div class="skill"> <img src="https://img.icons8.com/?size=100&id=55199&format=png&color=000000" alt="c++">
+                            <div class="skill"> <img
+                                    src="https://img.icons8.com/?size=100&id=55199&format=png&color=000000" alt="c++">
                                 <p>C++</p>
                             </div>
-                            <!-- <div class="skill"> <img src="c.png" alt="C">
-                                <p>C</p>
-                            </div> -->
-                            <div class="skill"> <img src="https://img.icons8.com/?size=100&id=cHBUT9SmrD2V&format=png&color=000000" alt="TypeScript">
-                                <p>TypeScript</p>
-                            </div>
-                            <div class="skill"> <img src="https://img.icons8.com/?size=100&id=z0IslVo01tWk&format=png&color=000000" alt="JavaScript">
+                            <div class="skill"> <img
+                                    src="https://img.icons8.com/?size=100&id=z0IslVo01tWk&format=png&color=000000"
+                                    alt="JavaScript">
                                 <p>Machine Learning</p>
+                            </div>
+                            <div class="skill"> <img
+                                    src="https://img.icons8.com/?size=100&id=cHBUT9SmrD2V&format=png&color=000000"
+                                    alt="TypeScript">
+                                <p>TypeScript</p>
                             </div>
                         </div>
                     </div>
                     <div class="section">
                         <h2>Other Skills</h2>
                         <div class="skills">
-                            <div class="skill"> <img src="https://img.icons8.com/?size=100&id=8580&format=png&color=000000" alt="English">
+                            <div class="skill"> <img
+                                    src="https://img.icons8.com/?size=100&id=8580&format=png&color=000000"
+                                    alt="English">
                                 <p>English</p>
                             </div>
-                            
-                            <div class="skill"> <img src="https://img.icons8.com/?size=100&id=gD4KUxhcSBZX&format=png&color=000000" alt="sketch">
+                            <div class="skill"> <img
+                                    src="https://img.icons8.com/?size=100&id=gD4KUxhcSBZX&format=png&color=000000"
+                                    alt="sketch">
                                 <p>Sketching</p>
                             </div>
-                            
                         </div>
                     </div>
                 </div>
@@ -140,34 +273,35 @@
                                 <div class="btn">Explore</div>
                             </a>
                         </div>
-                        <div class="img"><img src="ovs.png" alt=""></div>
-                        
+                        <div class="img"><img src="images/ovs.png" alt=""></div>
+
                     </div>
                     <div class="apc">
-                        <div class="img"><img src="apc.png" alt=""></div>
-                        <div class="text">This project is a feature-rich web application inspired by Amazon Prime Video. It replicates the core 
-                            functionalities of the popular streaming platform. Built with modern web development technologies.
+                        <div class="img"><img src="images/apc.png" alt=""></div>
+                        <div class="text">This project is a feature-rich web application inspired by Amazon Prime Video.
+                            It replicates the core
+                            functionalities of the popular streaming platform. Built with modern web development
+                            technologies.
                             <a href="/PROJECT 2/primevideo.html">
                                 <div class="btn">Explore</div>
                             </a>
                         </div>
                     </div>
                     <div class="tdl">
-                        <div class="text">Your Personal To-Do List Manager Karya Soochi is a sleek and efficient to-do list 
+                        <div class="text">Your Personal To-Do List Manager Karya Soochi is a sleek and efficient to-do
+                            list
                             application designed to help users stay organized and boost productivity.
-                            
-                               this project showcases expertise in front-end and back-end technologies while delivering a practical
-                                solution for everyday organization.
 
-
+                            this project showcases expertise in front-end and back-end technologies while delivering a
+                            practical
+                            solution for everyday organization.
                             <a href="/PROJECT 3/todo.html">
                                 <div class="btn">Explore</div>
                             </a>
                         </div>
-                        <div class="img"><img src="tdl.png" alt=""></div>
+                        <div class="img"><img src="images/tdl.png" alt=""></div>
                     </div>
                 </div>
-
             </div>
 
             <div id="cont">
@@ -190,18 +324,22 @@
             </div>
 
         </middle>
-        <div class="footer"> 
-            <div class="btp"> <a href="#apage"> <img src="https://img.icons8.com/?size=100&id=41199&format=png&color=ffffff" alt=""></a></div>
+        <div class="footer">
+            <div class="btp"> <a href="#apage"> <img
+                        src="https://img.icons8.com/?size=100&id=41199&format=png&color=ffffff" alt=""></a></div>
             <a href="#apage">BACK TO TOP</a>
             <div class="social-icons">
-                <a href="https://github.com/prerakbisen"><img src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=ffffff" alt="Github"></a>
-                <a href="https://in.linkedin.com/in/prerakbisen"><img src="https://img.icons8.com/?size=100&id=8808&format=png&color=ffffff" alt="LinkedIn">
-                <!-- </a> <a href="#"><img src="https://example.com/instagram-logo.png" alt="Instagram"></a> -->
-                <a href="#cont"><img id="tele" src="https://img.icons8.com/?size=100&id=lUktdBVdL4Kb&format=png&color=ffffff" alt="telegram"></a>
+                <a href="https://github.com/prerakbisen"><img
+                        src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=ffffff" alt="Github"></a>
+                <a href="https://in.linkedin.com/in/prerakbisen"><img
+                        src="https://img.icons8.com/?size=100&id=8808&format=png&color=ffffff" alt="LinkedIn">
+                    <a href="#cont"><img id="tele"
+                            src="https://img.icons8.com/?size=100&id=lUktdBVdL4Kb&format=png&color=ffffff"
+                            alt="telegram"></a>
             </div>
             <p>&copy;2025 Prerak Bisen, All Rights Reserved.</p>
         </div>
-        
+
 
 
     </div>
